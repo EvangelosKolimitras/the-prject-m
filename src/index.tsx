@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
+import PRJCTmTheme from './themes';
+import './index.module.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App title="The Project M" />
+    <PRJCTmTheme>
+      <App title="The Project M" />
+    </PRJCTmTheme>
   </React.StrictMode>,
   document.getElementById('root')
 );
