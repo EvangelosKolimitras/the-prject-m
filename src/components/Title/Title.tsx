@@ -1,3 +1,4 @@
+import { Logo } from '../Logo/Logo';
 import styles from './Title.module.css';
 
-export const Title = () => <h1 className={styles.Title}>The project M</h1>
+export const Title = () => <h1 className={styles.Title}><Logo /></h1>
