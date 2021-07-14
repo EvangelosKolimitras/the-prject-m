@@ -7,7 +7,7 @@ body {
   font-family            : Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color                  : azure;
+  color                  : rgb(117, 117, 117);
   box-sizing             : border-box;
   margin                 : 0;
   padding                : 0;
