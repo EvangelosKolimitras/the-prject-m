@@ -23,4 +23,7 @@ export const Nav = () => <ul>
     <li>
         <NavLink activeClassName={Styles.activeNavLink} to="/landscapes">landscapes</NavLink>
     </li>
+    <li>
+        <NavLink activeClassName={Styles.activeNavLink} to="/business-portfolio">business-portfolio</NavLink>
+    </li>
 </ul>

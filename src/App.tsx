@@ -3,6 +3,7 @@ import './App.css';
 import { Bio } from './components/Bio/Bio';
 import { Description } from './components/Description/Description';
 import { MainHeader } from './components/MainHeader/MainHeader';
+import { BusinessPorfolio } from './components/Routes/BusinessPortfolio/BusinessPortfolio';
 import { Christening } from './components/Routes/Christening/Christening';
 import { Events } from './components/Routes/Events/Events';
 import { FoodPhotography } from './components/Routes/FoodPhotography/FoodPhotography';
@@ -25,6 +26,7 @@ function App() {
           <Route path='/interior-photography'> <InteriorPhotography /> </Route>
           <Route path='/portraits'> <Portraits /> </Route>
           <Route path='/landscapes'> <Landscapes /> </Route>
+          <Route path='/business-portfolio'> <BusinessPorfolio /> </Route>
         </Switch>
         <Title />
         <Description />
