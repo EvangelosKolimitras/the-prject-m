@@ -1,29 +1,19 @@
 import { NavLink } from "react-router-dom";
+import { createEntpoints, entpoints } from "./endpoints";
 import Styles from './Nav.module.css';
 
-export const Nav = () => <ul>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/weddings">weddings</NavLink>
-    </li>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/christening">christening</NavLink>
-    </li>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/portraits">portraits</NavLink>
-    </li>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/food-photography">food-photography</NavLink>
-    </li>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/interior-photography">interior-photography</NavLink>
-    </li>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/events">events</NavLink>
-    </li>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/landscapes">landscapes</NavLink>
-    </li>
-    <li>
-        <NavLink activeClassName={Styles.activeNavLink} to="/business-portfolio">business-portfolio</NavLink>
-    </li>
-</ul>
+const paths = createEntpoints(entpoints);
+
+export const Nav = () => (
+    <ul>
+        {
+            paths.map(path => {
+                return (
+                    <li key={path.id}>
+                        <NavLink activeClassName={Styles.activeNavLink} to={path.path}>{path.endpoint}</NavLink>
+                    </li>
+                )
+            })
+        }
+    </ul>
+)
