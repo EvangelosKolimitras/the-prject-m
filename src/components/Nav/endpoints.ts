@@ -39,12 +39,8 @@ export const entpoints: { [key: string]: Entpoint } = {
         id: '7',
         endpoint: 'events',
         path: '/events'
-    },
-    '8': {
-        id: '8',
-        endpoint: 'business-portfolio',
-        path: '/business-portfolio'
     }
+
 }
 
 export const createEntpoints = (entpoits: { [key: string]: Entpoint }): Entpoint[] => Object.keys(entpoints).map(key => entpoints[key]);

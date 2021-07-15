@@ -5,6 +5,5 @@ import { Events } from './Events/Events'
 import { FoodPhotography } from './FoodPhotography/FoodPhotography'
 import { InteriorPhotography } from './InteriorPhotography/InteriorPhotography'
 import { Landscapes } from './Landscapes/Landscapes'
-import { BusinessPorfolio } from './BusinessPortfolio/BusinessPortfolio'
 
-export const routes = { Christening, Weddings, Portraits, Events, FoodPhotography, InteriorPhotography, Landscapes, BusinessPorfolio };
+export const routes = { Christening, Weddings, Portraits, Events, FoodPhotography, InteriorPhotography, Landscapes };
