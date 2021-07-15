@@ -1,4 +1,4 @@
-export const interior = {
+export const interiorData = {
     'i1': {
         id: 'i1',
         name: 'Melis Home Volos (airbnb)',

@@ -1,4 +1,4 @@
-export const events = {
+export const eventsData = {
     'e1': {
         id: 'e1',
         name: '4η πανελλήνια ιππική συνάντηση στο Βόλο',
