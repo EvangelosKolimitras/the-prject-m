@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import { MainHeader } from './components';
-import { Christening, Events, FoodPhotography, InteriorPhotography, Landscapes, Portraits, Weddings } from './components/Routes/';
+import { Christening, Events, FoodPhotography, InteriorPhotography, Landscapes, Portraits, Weddings } from './routes/';
 
 function App() {
   return (
