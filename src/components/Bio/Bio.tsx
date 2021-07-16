@@ -1,4 +1,3 @@
-import { info } from '../../bio';
 
 export const Bio = () => {
     return <div>
