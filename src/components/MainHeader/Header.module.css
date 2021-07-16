@@ -1,5 +1,4 @@
 .Header {
-    position        : relative;
-    grid-row        : 1/2;
-    background-color: rgba(3, 3, 3, 0.651);
+    position: relative;
+    grid-row: 1/2;
 }

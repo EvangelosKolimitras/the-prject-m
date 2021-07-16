@@ -5,5 +5,5 @@ import Styles from './NavItem.module.css';
 
 export const NavItem = (props: { path: Entpoint }) => {
     const { path: { endpoint, path } } = props;
-    return <li className={Styles.NavItem}> <NavLink activeClassName={Styles.activeItem} to={path}>{endpoint}</NavLink> </li>
+    return <li className={Styles.NavItem}> <NavLink activeClassName={Styles.activeNavItem} to={path}>{endpoint}</NavLink> </li>
 }

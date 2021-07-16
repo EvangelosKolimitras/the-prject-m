@@ -15,11 +15,6 @@ export const entpoints: { [key: string]: Entpoint } = {
         endpoint: 'christening',
         path: '/christening'
     },
-    '3': {
-        id: '3',
-        endpoint: 'weddings',
-        path: '/weddings'
-    },
     '4': {
         id: '4',
         endpoint: 'portraits',
