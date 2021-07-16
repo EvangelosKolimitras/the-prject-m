@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import { MainHeader } from './components';
-import { Christening, Events, FoodPhotography, InteriorPhotography, Landscapes, Portraits, Weddings } from './routes/';
+import { WelcomePage, Christening, Events, FoodPhotography, InteriorPhotography, Landscapes, Portraits, Weddings } from './routes/';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <MainHeader />
       <main>
         <Switch>
+          <Route exact path='/'> <WelcomePage /> </Route>
           <Route path='/events'> <Events /> </Route>
           <Route path='/weddings'> <Weddings /> </Route>
           <Route path='/christening'> <Christening /> </Route>

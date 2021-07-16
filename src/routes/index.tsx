@@ -5,3 +5,4 @@ export { Events } from './Events/Events';
 export { FoodPhotography } from './FoodPhotography/FoodPhotography';
 export { InteriorPhotography } from './InteriorPhotography/InteriorPhotography';
 export { Landscapes } from './Landscapes/Landscapes';
+export { WelcomePage } from './WelcomePage/WelcomePage';
