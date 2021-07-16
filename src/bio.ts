@@ -1,4 +1,6 @@
-export const info = {
+import { BioNS } from "./types/types";
+
+export const info: BioNS.Bio = {
     name: 'panagiotis',
     lastname: 'martiou',
     title: 'professional photographer',
