@@ -1,5 +1,6 @@
-import { Nav } from "../Nav/Nav"
+import { Nav } from "../Nav/Nav";
+import Styles from "./Header.module.css";
 
 export const MainHeader = () => {
-    return <header> <Nav /> </header>
+    return <header className={Styles.Header}> <Nav /> </header>
 }

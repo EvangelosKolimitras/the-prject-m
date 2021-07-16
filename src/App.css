@@ -1,5 +1,5 @@
 .App {
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
+  display              : grid;
+  grid-template-rows   : 9rem 1fr;
+  grid-template-columns: 100vw;
 }
