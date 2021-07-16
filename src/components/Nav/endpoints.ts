@@ -1,4 +1,4 @@
-interface Entpoint {
+export interface Entpoint {
     id: string;
     endpoint: string;
     path: string;
