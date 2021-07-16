@@ -22,13 +22,13 @@ export const entpoints: { [key: string]: Entpoint } = {
     },
     '5': {
         id: '5',
-        endpoint: 'food-photography',
-        path: '/food-photography'
+        endpoint: 'gastronomy',
+        path: '/gastronomy'
     },
     '6': {
         id: '6',
-        endpoint: 'interior-photography',
-        path: '/interior-photography'
+        endpoint: 'interior',
+        path: '/interior'
     },
     '7': {
         id: '7',
