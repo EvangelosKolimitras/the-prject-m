@@ -1,15 +1,17 @@
-import { Redirect, Route, RouteProps, Switch } from 'react-router-dom';
+import { Redirect, Route, RouteProps, Switch, useHistory } from 'react-router-dom';
 import './App.css';
 import { MainHeader } from './components';
 import { WelcomePage, Christening, Events, FoodPhotography, InteriorPhotography, Landscapes, Portraits, Weddings } from './routes/';
 
 
 function App<T extends Partial<RouteProps>>(props: T) {
-  console.log(props.location);
+  const h = useHistory();
 
   return (
     <div className="App">
-      <MainHeader />
+      {
+        ['/welcome', '/'].every((el) => h.location.pathname !== el) && <MainHeader />
+      }
       <main>
         <Switch>
           <Route exact path='/'>
