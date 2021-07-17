@@ -1,15 +1,21 @@
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, RouteProps, Switch } from 'react-router-dom';
 import './App.css';
 import { MainHeader } from './components';
 import { WelcomePage, Christening, Events, FoodPhotography, InteriorPhotography, Landscapes, Portraits, Weddings } from './routes/';
 
-function App() {
+
+function App<T extends Partial<RouteProps>>(props: T) {
+  console.log(props.location);
+
   return (
     <div className="App">
       <MainHeader />
       <main>
         <Switch>
-          <Route exact path='/'> <WelcomePage /> </Route>
+          <Route exact path='/'>
+            <Redirect to='/welcome' ></Redirect>
+          </Route>
+          <Route exact path='/welcome'> <WelcomePage /> </Route>
           <Route path='/events'> <Events /> </Route>
           <Route path='/weddings'> <Weddings /> </Route>
           <Route path='/christening'> <Christening /> </Route>
