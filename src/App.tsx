@@ -1,7 +1,6 @@
 import { Redirect, Route, RouteProps, Switch, useHistory } from 'react-router-dom';
 import './App.css';
 import { MainHeader } from './components';
-import { EnterButton } from './components/EnterButton/EnterButton';
 import { WelcomePage, Christening, Events, Food, Interior, Landscapes, Portraits, Weddings } from './routes/';
 
 function App<T extends Partial<RouteProps>>(props: T) {
@@ -27,7 +26,6 @@ function App<T extends Partial<RouteProps>>(props: T) {
           <Route path='/landscapes'> <Landscapes /> </Route>
         </Switch>
       </main>
-      <EnterButton />
     </div>
   );
 }
