@@ -1,49 +1,21 @@
 .logoWrapper {
-    background                 : rgba(255, 255, 255, 0.527);
-    background                 : linear-gradient(290deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.527) 100%);
-    background                 : -webkit-linear-gradient(290deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.527) 100%);
-    filter                     : progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
-    box-shadow                 : 0 .3rem 1rem #f3f3f3;
-    grid-row                   : 2/3;
-    border-radius              : 1rem;
-    padding                    : 3rem 1rem;
-    position                   : relative;
-    width                      : 25vw;
-    min-width                  : 25rem;
-    display                    : flex;
-    flex-direction             : column;
-    align-items                : center;
-    justify-content            : center;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode        : forwards;
-    -webkit-filter             : blur(0);
-    filter                     : blur(0);
-    -webkit-animation          : blury 4s cubic-bezier(0.165, 0.84, 0.44, 1) 1;
-    animation                  : blury 4s cubic-bezier(0.165, 0.84, 0.44, 1) 1;
-}
-
-@-webkit-keyframes blury {
-    0% {
-        -webkit-filter: blur(15rem);
-        filter        : blur(15rem);
-    }
-
-    100% {
-        -webkit-filter: blur(0);
-        filter        : blur(0);
-    }
-}
-
-@keyframes blury {
-    0% {
-        -webkit-filter: blur(15rem);
-        filter        : blur(15rem);
-    }
-
-    100% {
-        -webkit-filter: blur(0);
-        filter        : blur(0);
-    }
+    background     : rgba(255, 255, 255, 0.527);
+    background     : linear-gradient(290deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.527) 100%);
+    background     : -webkit-linear-gradient(290deg, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.527) 100%);
+    filter         : progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
+    box-shadow     : 0 .3rem 1rem #f3f3f3;
+    grid-row       : 2/3;
+    border-radius  : 1rem;
+    padding        : 3rem 1rem;
+    position       : relative;
+    width          : 25vw;
+    min-width      : 25rem;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    -webkit-filter : blur(0);
+    filter         : blur(0);
 }
 
 .logo {
