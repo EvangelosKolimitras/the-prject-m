@@ -1,9 +1,22 @@
-import React from "react";
-import { map } from "../../utils/fp";
+import { useState } from "react";
+import { useEffect } from "react";
+import { Entpoint, getEntpoints } from "../../data/endpoints";
 import { NavItem } from "../NavItem/NavItem";
-import { createEntpoints, entpoints } from "./endpoints";
 import Styles from './Nav.module.css';
 
-const paths = createEntpoints(entpoints);
+export const Nav = () => {
+    const [paths, setPaths] = useState<Entpoint[]>([]);
+    useEffect(() => {
+        getEntpoints().then(data => {
+            setPaths(data);
+        });
+    }, []);
 
-export const Nav = () => <ul className={Styles.Nav}> {map(path => <NavItem key={path.id} path={path} />)(paths)} </ul>;
+    return (
+        <ul className={Styles.Nav}>
+            {
+                paths.map(path => <NavItem key={path.id} path={path} />)
+            }
+        </ul>
+    )
+};

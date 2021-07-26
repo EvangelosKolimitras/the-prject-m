@@ -1,10 +1,6 @@
-export interface Entpoint {
-    id: string;
-    endpoint: string;
-    path: string;
-}
+import { Entpoint } from "./endpoints";
 
-export const entpoints: { [key: string]: Entpoint } = {
+export const _data: { [key: string]: Entpoint } = {
     '1': {
         id: '1',
         endpoint: 'weddings',
@@ -22,8 +18,8 @@ export const entpoints: { [key: string]: Entpoint } = {
     },
     '5': {
         id: '5',
-        endpoint: 'gastronomy',
-        path: '/gastronomy'
+        endpoint: 'food',
+        path: '/food'
     },
     '6': {
         id: '6',
@@ -40,7 +36,4 @@ export const entpoints: { [key: string]: Entpoint } = {
         endpoint: 'welcome',
         path: '/'
     }
-
 }
-
-export const createEntpoints = (entpoits: { [key: string]: Entpoint }): Entpoint[] => Object.keys(entpoints).map(key => entpoints[key]);
