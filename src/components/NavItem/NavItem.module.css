@@ -1,12 +1,13 @@
 .NavItem {
     text-transform: capitalize;
-    padding       : 1rem;
+    padding       : 2rem;
     border        : none;
     border-bottom : .1rem solid #fff;
 }
 
 .NavItem>a {
-    color          : black;
+    color: white;
+
     font-size      : large;
     text-decoration: none;
 }
