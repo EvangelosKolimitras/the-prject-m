@@ -1,13 +1,13 @@
 import { Route, RouteProps, Switch } from 'react-router-dom';
-import './App.css';
 import { MainHeader } from './components';
 import { WelcomePage, Christening, Events, Food, Interior, Landscapes, Portraits, Weddings } from './routes/';
+import Styles from './App.module.css';
 
 function App<T extends Partial<RouteProps>>(props: T) {
   return (
-    <div className="App">
+    <div className={Styles.App}>
       <MainHeader />
-      <main>
+      <main className={Styles.Main}>
         <Switch>
           <Route exact path='/welcome'> <WelcomePage /> </Route>
           <Route path='/events'> <Events /> </Route>
