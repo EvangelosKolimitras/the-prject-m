@@ -6,7 +6,9 @@ import Styles from './App.module.css';
 function App<T extends Partial<RouteProps>>(props: T) {
   return (
     <div className={Styles.App}>
-      <MainHeader />
+      <header className={Styles.Header}>
+        <MainHeader />
+      </header>
       <main className={Styles.Main}>
         <Switch>
           <Route exact path='/welcome'> <WelcomePage /> </Route>
