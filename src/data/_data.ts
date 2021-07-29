@@ -30,10 +30,5 @@ export const _data: { [key: string]: Entpoint } = {
         id: '7',
         endpoint: 'events',
         path: '/events'
-    },
-    '8': {
-        id: '8',
-        endpoint: 'welcome',
-        path: '/'
     }
 }
