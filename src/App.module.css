@@ -32,11 +32,11 @@
   }
 
   .Header {
-    max-width: 100vw;
+    max-width : 100vw;
+    box-shadow: none;
   }
 
   .Main {
-    grid-column: 1/-1;
-    grid-row   : 2/-1;
+    width: 100vw;
   }
 }

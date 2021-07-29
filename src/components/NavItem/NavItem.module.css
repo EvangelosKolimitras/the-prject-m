@@ -16,3 +16,11 @@
 .activeNavItem {
     color: red;
 }
+
+@media screen and (max-width:37.5rem) {
+
+    .NavItem {
+        border-bottom: none;
+    }
+
+}
