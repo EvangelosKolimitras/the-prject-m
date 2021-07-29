@@ -8,6 +8,7 @@
     border        : none;
     border-bottom : .1rem solid var(--NavItemColor);
     cursor        : pointer;
+    padding       : 1rem;
 }
 
 .NavItem:hover {
