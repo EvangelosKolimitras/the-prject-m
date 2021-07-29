@@ -1,3 +1,8 @@
+:root {
+  --PrimaryBlack: rgb(34, 34, 34);
+  --PrimaryColor: rgb(117, 117, 117);
+}
+
 *,
 *::after,
 *::before {
@@ -16,8 +21,8 @@ body {
   font-family               : Megrim, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   -webkit-font-smoothing    : antialiased;
   -moz-osx-font-smoothing   : grayscale;
-  color                     : rgb(117, 117, 117);
-  background                : rgb(34, 34, 34);
+  color                     : var(--PrimaryColor);
+  background                : var(--PrimaryBlack);
   /* background             : -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 1) 34%, rgba(244, 244, 244, 1) 100%);
   background                : -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 1) 34%, rgba(244, 244, 244, 1) 100%);
   background                : linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 1) 34%, rgba(244, 244, 244, 1) 100%);

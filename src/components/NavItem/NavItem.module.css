@@ -1,16 +1,31 @@
+:root {
+    --NavItemColor  : rgb(221, 221, 221);
+    --HoverItemColor: rgb(34, 34, 34);
+}
+
 .NavItem {
     text-transform: capitalize;
-    padding       : 2rem;
     border        : none;
-    border-bottom : .1rem solid #fff;
+    border-bottom : .1rem solid var(--NavItemColor);
+    cursor        : pointer;
+}
+
+.NavItem:hover {
+    background-color: var(--NavItemColor);
+    color           : pink;
+    transition      : .5s;
+}
+
+.NavItem:hover>a {
+    color     : var(--HoverItemColor);
+    transition: .3s;
 }
 
 .NavItem>a {
-    color         : rgb(221, 221, 221);
-    letter-spacing: .25rem;
-
-    font-size      : large;
+    color          : var(--NavItemColor);
     text-decoration: none;
+    font-size      : 2rem;
+    line-height    : 5rem;
 }
 
 .activeNavItem {
