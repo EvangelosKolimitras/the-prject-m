@@ -6,6 +6,7 @@
     background-color: inherit;
     min-width       : fit-content;
     list-style-type : none;
+    width           : 100%;
 }
 
 @media screen and (max-width:35rem) {

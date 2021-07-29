@@ -6,7 +6,8 @@
 }
 
 .NavItem>a {
-    color: white;
+    color         : rgb(221, 221, 221);
+    letter-spacing: .25rem;
 
     font-size      : large;
     text-decoration: none;
