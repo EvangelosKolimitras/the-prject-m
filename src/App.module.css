@@ -18,7 +18,7 @@
   justify-content: space-evenly;
   min-width      : min-content;
   max-width      : var(--HeaderWidth);
-  box-shadow     : 0 0 .8rem #4e4e4e;
+  box-shadow     : 0 0 .1rem #4e4e4e;
 }
 
 .Main {
