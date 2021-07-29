@@ -4,6 +4,6 @@ import { Entpoint } from "../../data/endpoints";
 import Styles from './NavItem.module.css';
 
 export const NavItem = (props: { path: Entpoint }) => {
-    const { path: { endpoint, path } } = props;
-    return <li className={Styles.NavItem}> <NavLink activeClassName={Styles.activeNavItem} to={path}>{endpoint}</NavLink> </li>
+    const { path, endpoint } = props.path;
+    return <NavLink className={Styles.NavItem} activeClassName={Styles.activeNavItem} to={path}>{endpoint}</NavLink>
 }

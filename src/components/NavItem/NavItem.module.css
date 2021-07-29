@@ -4,33 +4,32 @@
 }
 
 .NavItem {
-    text-transform: capitalize;
-    border        : none;
-    border-bottom : .1rem solid var(--NavItemColor);
-    cursor        : pointer;
-    padding       : 1rem;
+    color          : var(--NavItemColor);
+    text-decoration: none;
+    font-size      : 2rem;
+    line-height    : 5rem;
+    text-transform : capitalize;
+    border         : none;
+    border-bottom  : .1rem solid var(--NavItemColor);
+    cursor         : pointer;
+    padding        : 1rem;
+    position       : relative;
+    letter-spacing : 0;
+    text-shadow    : none;
+    transition     : .5s;
 }
 
 .NavItem:hover {
     background-color: var(--NavItemColor);
     color           : pink;
     transition      : .5s;
-}
-
-.NavItem:hover>a {
-    color     : var(--HoverItemColor);
-    transition: .3s;
-}
-
-.NavItem>a {
-    color          : var(--NavItemColor);
-    text-decoration: none;
-    font-size      : 2rem;
-    line-height    : 5rem;
+    color           : var(--HoverItemColor);
+    transition      : .3s;
 }
 
 .activeNavItem {
-    color: red;
+    letter-spacing: .25rem;
+    text-shadow   : 0 .5rem .358rem white;
 }
 
 @media screen and (max-width:37.5rem) {
