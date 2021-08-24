@@ -10,6 +10,7 @@ export namespace BioNS {
         fields: string[];
         social: Social;
         about_me: string;
+        avatarURL: `https://${string}`
     }
 
     interface Social {
