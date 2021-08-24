@@ -9,20 +9,24 @@ function App<T extends Partial<RouteProps>>(props: T) {
       <header className={Styles.Header}>
         <MainHeader />
       </header>
-      <main className={Styles.Main}>
-        <Switch>
-          <Route exact path='/welcome'> <WelcomePage /> </Route>
-          <Route path='/events'> <Events /> </Route>
-          <Route path='/weddings'> <Weddings /> </Route>
-          <Route path='/christening'> <Christening /> </Route>
-          <Route path='/food'> <Food /> </Route>
-          <Route path='/interior'> <Interior /> </Route>
-          <Route path='/portraits'> <Portraits /> </Route>
-          <Route path='/landscapes'> <Landscapes /> </Route>
-        </Switch>
-      </main>
+      <main className={Styles.Main}> {initilizeRoutes()} </main>
     </div>
   );
+}
+
+function initilizeRoutes() {
+  return (
+    <Switch>
+      <Route exact path='/welcome'> <WelcomePage /> </Route>
+      <Route path='/events'> <Events /> </Route>
+      <Route path='/weddings'> <Weddings /> </Route>
+      <Route path='/christening'> <Christening /> </Route>
+      <Route path='/food'> <Food /> </Route>
+      <Route path='/interior'> <Interior /> </Route>
+      <Route path='/portraits'> <Portraits /> </Route>
+      <Route path='/landscapes'> <Landscapes /> </Route>
+    </Switch>
+  )
 }
 
 export default App;

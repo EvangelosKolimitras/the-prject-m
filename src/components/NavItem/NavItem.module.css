@@ -28,8 +28,10 @@
 }
 
 .activeNavItem {
-    letter-spacing: .25rem;
-    text-shadow   : 0 .5rem .358rem white;
+    background-color: var(--NavItemColor);
+    color           : var(--HoverItemColor);
+    letter-spacing  : .25rem;
+    position        : relative;
 }
 
 @media screen and (max-width:37.5rem) {
