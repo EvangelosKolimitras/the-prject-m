@@ -6,6 +6,7 @@ export const info: BioNS.Bio = {
     title: 'professional photographer',
     city: 'volos',
     country: 'greece',
+    avatarURL: 'https://panagiotismartiou.files.wordpress.com/2020/04/image01_ig.jpg?w=1500',
     emails: {
         'outook': {
             email: 'martioupan@outlook.com'
