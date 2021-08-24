@@ -27,9 +27,8 @@
 }
 
 .ModuleRouteContainer {
-  height          : 100%;
-  background-color: green;
-  padding         : 1rem;
+  height : 100%;
+  padding: 1rem;
 }
 
 @media screen and (max-width:37.5rem) {
