@@ -2,7 +2,6 @@
 import React from "react";
 import { useState } from "react";
 import { info } from "../bio";
-import { BioNS } from "../types/types";
 
 export const Ctx = React.createContext<Partial<BioNS.Bio>>({
     name: '',

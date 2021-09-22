@@ -1,4 +1,4 @@
-export namespace BioNS {
+declare namespace BioNS {
     interface Bio {
         name: string;
         lastname: string;
